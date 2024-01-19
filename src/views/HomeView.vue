@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import TheLayout from '@/components/TheLayout.vue'
+import MainLayout from '@/components/layouts/MainLayout.vue'
 </script>
 
 <template>
-  <TheLayout />
+  <MainLayout />
 </template>

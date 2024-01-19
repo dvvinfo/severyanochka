@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import TheHeader from './TheHeader.vue'
-import BottomTabNavigator from './BottomTabNavigator.vue'
-import TheFooter from './TheFooter.vue'
+import TheHeader from '../TheHeader.vue'
+import BottomTabNavigator from '../BottomTabNavigator.vue'
+import TheFooter from '../TheFooter.vue'
 </script>
 
 <template>
