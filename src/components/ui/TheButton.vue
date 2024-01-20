@@ -3,7 +3,7 @@ import { useSlots } from 'vue'
 import TheTypography from './TheTypography.vue'
 
 interface Props {
-  color?: 'primary' | 'secondary' | 'grayscale' | 'error' | 'white'
+  color?: 'primary' | 'secondary' | 'grayscale' | 'error' | 'white' | 'transparent'
   decoration?: 'default' | 'outline' | 'none'
   size?: 'l' | 'm' | 's'
   disabled?: boolean
@@ -44,6 +44,9 @@ const classes = ['button', `size__${size}`, `color__${color}`, `decoration__${de
 .button.size__m {
   padding: 8px;
   gap: 8px;
+}
+.button.color__transparent{
+  background-color: transparent;
 }
 .button.color__white {
   background-color: var(--main-surface);

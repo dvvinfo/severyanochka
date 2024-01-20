@@ -5,6 +5,7 @@
       'typography',
       size ? `size__${size}` : '',
       bold ? 'bold' : '',
+      white? 'white' : '',
       `tag__${tagName}`
     ]"
   >
@@ -17,6 +18,7 @@ interface Props {
   tagName: 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'span'
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   bold?: boolean
+  white?: boolean
 }
 
 const props = defineProps<Props>()
@@ -68,6 +70,9 @@ const { tagName, size, bold } = props
 }
 .bold {
   font-weight: 700;
+}
+.white {
+  color: var(--main-on-primary);
 }
 .tag {
   &__h1 {
